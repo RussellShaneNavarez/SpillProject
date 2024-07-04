@@ -31,10 +31,10 @@ const Form: FC<FormProps> = ({ placeholder, isComment, postId }) => {
     try {
       setIsLoading(true);
 
-      const url = isComment ? `/api/comments?postId=${postId}/` : "/api/posts";
+      const url = isComment ? `/api/comments?postId=${postId}` : "/api/posts";
 
       await axios.post(url, { body });
-      toast.success("Tweet Created");
+      toast.success("Spill Created");
       setBody("");
       mutatePosts();
       mutatePost();
@@ -63,13 +63,13 @@ const Form: FC<FormProps> = ({ placeholder, isComment, postId }) => {
             />
             <hr className="opacity-0 peer-focus:opacity-100 h-[1px] w-full border-neutral-800 transition" />
             <div className="flex flex-row items-center justify-end mt-4">
-              <Button label="Tweet" onClick={onSubmit} disabled={isLoading || !body} />
+              <Button label="Spill" onClick={onSubmit} disabled={isLoading || !body} />
             </div>
           </div>
         </div>
       ) : (
         <div className="py-8">
-          <h1 className="text-white text-2xl text-center mb-4 font-bold">Welcome to Twitter</h1>
+          <h1 className="text-white text-2xl text-center mb-4 font-bold">Welcome to Spill</h1>
           <div className="flex flex-row items-center justify-center gap-4">
             <Button label="Login" onClick={loginModal.onOpen} />
             <Button label="Register" onClick={registerModal.onOpen} secondary />

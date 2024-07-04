@@ -5,7 +5,7 @@ interface CommentFeedProps {
   comments?: Record<string, any>[];
 }
 
-const CommentFeed: FC<CommentFeedProps> = ({ comments = [] }) => {
+const CommentFeed: React.FC<CommentFeedProps> = ({ comments = [] }) => {
   return (
     <>
       {comments?.map((comment) => (

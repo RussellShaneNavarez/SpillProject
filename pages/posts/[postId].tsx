@@ -1,7 +1,7 @@
 import Form from "@/components/Form";
 import Header from "@/components/Header";
 import PostItem from "@/components/Posts/PostItem";
-import CommentFeed from "@/components/posts/CommentFeed";
+import CommentFeed from "@/components/Posts/CommentFeed";
 import usePost from "@/hooks/usePost";
 import { useRouter } from "next/router";
 import { ClipLoader } from "react-spinners";
@@ -15,15 +15,15 @@ const PostView = () => {
   if (isLoading || !fetchedPost)
     return (
       <div className="flex justify-center items-center h-full">
-        <ClipLoader color="lightblue" size={80} />
+        <ClipLoader color="violet" size={80} />
       </div>
     );
 
   return (
     <>
-      <Header showBackArrow label="Tweet" />
+      <Header showBackArrow label="Spill" />
       <PostItem data={fetchedPost} />
-      <Form postId={postId as string} isComment placeholder="Tweet your reply" />
+      <Form postId={postId as string} isComment placeholder="Reply the spill" />
       <CommentFeed comments={fetchedPost.comments} />
     </>
   );

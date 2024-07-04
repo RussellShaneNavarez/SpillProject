@@ -26,15 +26,15 @@ const Button: FC<ButtonProps> = ({
 			className={`
         disabled:opacity-70
         disabled:cursor-not-allowed
-				font-semibold
+		font-semibold
         rounded-full
         hover:opacity-80
         transition
         border-2
         ${fullWidth ? "w-full" : "w-fit"}
-        ${secondary ? "bg-white" : "bg-sky-500"}
+        ${secondary ? "bg-white" : "bg-violet-600"}
         ${secondary ? "text-black" : "text-white"}
-        ${secondary ? "border-black" : "border-sky-500"}
+        ${secondary ? "border-black" : "border-violet-600"}
         ${large ? "text-xl" : "text-md"}
         ${large ? "px-5 py-3" : "px-4 py-2"}
         ${outline ? "bg-transparent" : ""}

@@ -22,7 +22,7 @@ const Input: FC<InputProps> = ({
 			value={value}
 			type={type}
 			placeholder={placeholder}
-			className="w-full p-4 text-lg bg-black border-2 border-neutral-800 outline-none text-white focus:border-sky-500 transition disabled:bg-neutral-900 disabled:opacity-70 disabled:cursor-not-allowed"
+			className="w-full p-4 text-lg bg-black border-2 border-neutral-800 outline-none text-white focus:border-violet-600 transition disabled:bg-neutral-900 disabled:opacity-70 disabled:cursor-not-allowed"
 		/>
 	);
 };

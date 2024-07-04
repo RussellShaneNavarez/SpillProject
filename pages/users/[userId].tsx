@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import PostFeed from "@/components/posts/PostFeed";
+import PostFeed from "@/components/Posts/PostFeed";
 import UserBio from "@/components/users/UserBio";
 import UserHero from "@/components/users/UserHero";
 import useUser from "@/hooks/useUser";
@@ -15,7 +15,7 @@ const UserView = () => {
   if (isLoading || !fetchedUser)
     return (
       <div className="flex justify-center items-center h-full">
-        <ClipLoader color="lightblue" size={80} />
+        <ClipLoader color="violet" size={80} />
       </div>
     );
 
