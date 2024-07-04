@@ -55,7 +55,7 @@ const LoginModal = () => {
 
 	const footerContent = (
 		<div className="text-neutral-400 text-center mt-4">
-			<p>Don't have an account?</p>
+			<p>Don&apos;t have an account?</p>
 			<span
 				onClick={onToggle}
 				className="text-white cursor-pointer hover:underline"
