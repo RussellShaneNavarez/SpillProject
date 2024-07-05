@@ -1,8 +1,8 @@
-# Twitter Clone
+# Spill
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
-Twitter clone web application built using Next.js, Tailwind CSS, Prisma, and MongoDB. This clone allows users to post tweets, follow other users, like tweets, and perform various other Twitter-like functionalities.
+A Twitter clone web application built using Next.js, Tailwind CSS, Prisma, and MongoDB. This clone allows users to post tweets, follow other users, like tweets, and perform various other Twitter-like functionalities.
 
 ## Features
 
@@ -25,7 +25,7 @@ Twitter clone web application built using Next.js, Tailwind CSS, Prisma, and Mon
 
 ## Demo
 
-Soon
+[SpillProject](https://spillx.vercel.app/)
 
 
 ## Prerequisites
